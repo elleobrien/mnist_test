@@ -8,3 +8,7 @@
 
 The goal is to check whether a user who is not a collaborator on this repository can initiate a Git Action to retrain the model.
 
+**Open questions**
+A) Will PRs from external users successfully trigger Git Actions? Will these Git Actions be able to access the necessary authorization credentials to pull from my data remote (a GDrive folder)?
+
+B) Is it kosher to keep certain credentials (my GDrive ID & Secret) in the `.dvc/config` file, or will we need to locate another place to keep them for the purpose of this tutorial?

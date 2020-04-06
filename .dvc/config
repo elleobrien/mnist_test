@@ -1,5 +1,7 @@
 ['remote "mygdrive"']
 url = gdrive://root/mnist_elle
+gdrive_client_id = 357306548743-tsb9uitlflm8b999oedlpij6n2f2pe0t.apps.googleusercontent.com
+gdrive_client_secret = Jgf6rTJE0teLxYwBmqX8M84k
 [core]
 remote = mygdrive
 

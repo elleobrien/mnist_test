@@ -1,0 +1,20 @@
+name: default
+
+on: [push, pull_request]
+
+jobs:
+  dvc:
+    runs-on: ubuntu-latest
+    container: docker://dvcorg/dvc-cml:latest
+
+    steps:
+      - uses: actions/checkout@v2
+      
+      - name: dvc_action_run
+        env:
+          GDRIVE_CREDENTIALS_DATA: ${{ secrets.GDRIVE_CREDENTIALS_DATA }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          repro_targets: eval.dvc
+        run: |
+          pip3 install -r requirements.txt
+          dvc_action_run

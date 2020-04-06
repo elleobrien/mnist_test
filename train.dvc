@@ -1,0 +1,13 @@
+cmd: python3 code/train.py
+deps:
+- path: code/train.py
+- path: data/mnist_train.csv
+outs:
+- path: models
+  cache: true
+  metric: false
+  persist: false
+- path: metrics/train.json
+  cache: false
+  metric: true
+  persist: false

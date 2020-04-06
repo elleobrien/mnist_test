@@ -16,7 +16,7 @@ OUT = os.path.join(dirname, "../models/mnist")
 
 batch_size = 128
 num_steps = 1800
-learning_rate = 0.02
+learning_rate = 0.01
 start = time.time()
 
 # input
